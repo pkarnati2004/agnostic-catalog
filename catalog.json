@@ -1,0 +1,1392 @@
+{
+  "schemaVersion": 1,
+  "version": 2,
+  "generatedAt": "2026-09-14T03:31:56.000Z",
+  "sources": [
+    {
+      "id": "terminal-bench",
+      "name": "Terminal-Bench leaderboard",
+      "url": "https://www.tbench.ai/leaderboard",
+      "terms": "Leaderboard figures published by the Terminal-Bench project (Stanford / Harbor / Laude Institute); harness Apache-2.0.",
+      "fetchedAt": "2026-09-12"
+    },
+    {
+      "id": "swe-bench",
+      "name": "SWE-bench leaderboards",
+      "url": "https://www.swebench.com/",
+      "terms": "MIT (SWE-bench project); leaderboard results published on the site.",
+      "fetchedAt": "2026-09-12"
+    },
+    {
+      "id": "swe-bench-pro",
+      "name": "SWE-Bench Pro leaderboard (public dataset)",
+      "url": "https://scale.com/leaderboard/swe_bench_pro_public",
+      "terms": "Published by Scale AI; figures transcribed with attribution.",
+      "fetchedAt": "2026-09-12"
+    },
+    {
+      "id": "livebench",
+      "name": "LiveBench",
+      "url": "https://livebench.ai/",
+      "terms": "Apache-2.0 (LiveBench project); leaderboard tables published on the site.",
+      "fetchedAt": "2026-09-12"
+    },
+    {
+      "id": "coding-agent-bench",
+      "name": "Red Hat coding_agent_bench",
+      "url": "https://github.com/redhat-et/coding_agent_bench",
+      "terms": "No licence file in the repository as of this reading; scores transcribed as facts with attribution.",
+      "fetchedAt": "2026-09-12"
+    },
+    {
+      "id": "openbench",
+      "name": "OpenBench harness comparison",
+      "url": "https://openbench.run/",
+      "terms": "MIT (minghinmatthewlam/openbench).",
+      "fetchedAt": "2026-09-12"
+    },
+    {
+      "id": "anthropic-plans",
+      "name": "Claude plan comparison",
+      "url": "https://claude.com/pricing",
+      "terms": "Vendor plan page; entitlements transcribed as published.",
+      "fetchedAt": "2026-09-12"
+    },
+    {
+      "id": "openai-codex-plans",
+      "name": "Codex plans and usage",
+      "url": "https://developers.openai.com/codex/pricing",
+      "terms": "Vendor plan page; entitlements transcribed as published.",
+      "fetchedAt": "2026-09-12"
+    },
+    {
+      "id": "openrouter",
+      "name": "OpenRouter model list",
+      "url": "https://openrouter.ai/api/v1/models",
+      "terms": "Public model and pricing API.",
+      "fetchedAt": "2026-09-12"
+    }
+  ],
+  "benchmarks": [
+    {
+      "source": "terminal-bench",
+      "date": "2026-09-03",
+      "benchmark": "Terminal-Bench 4.0",
+      "model": "openai/gpt-6-astra",
+      "modelVersion": null,
+      "harness": "codex",
+      "harnessVersion": null,
+      "taskClass": "general",
+      "metric": "accuracy",
+      "score": 58.18,
+      "n": 330,
+      "costUsd": 3267.18,
+      "tokens": 1529778322,
+      "notes": "reasoning effort max"
+    },
+    {
+      "source": "terminal-bench",
+      "date": "2026-09-01",
+      "benchmark": "Terminal-Bench 4.0",
+      "model": "anthropic/claude-fable-5.1",
+      "modelVersion": null,
+      "harness": "claude-code",
+      "harnessVersion": null,
+      "taskClass": "general",
+      "metric": "accuracy",
+      "score": 57.88,
+      "n": 330,
+      "costUsd": 6243.5,
+      "tokens": 2746221560,
+      "notes": "reasoning effort max"
+    },
+    {
+      "source": "terminal-bench",
+      "date": "2026-09-03",
+      "benchmark": "Terminal-Bench 4.0",
+      "model": "openai/gpt-6-astra",
+      "modelVersion": null,
+      "harness": "codex",
+      "harnessVersion": null,
+      "taskClass": "general",
+      "metric": "accuracy",
+      "score": 54.24,
+      "n": 330,
+      "costUsd": 1914.8,
+      "tokens": 1051885207,
+      "notes": "reasoning effort medium"
+    },
+    {
+      "source": "terminal-bench",
+      "date": "2026-07-24",
+      "benchmark": "Terminal-Bench 4.0",
+      "model": "anthropic/claude-opus-5",
+      "modelVersion": null,
+      "harness": "claude-code",
+      "harnessVersion": null,
+      "taskClass": "general",
+      "metric": "accuracy",
+      "score": 51.82,
+      "n": 330,
+      "costUsd": 5969.11,
+      "tokens": 6527147637,
+      "notes": "reasoning effort max"
+    },
+    {
+      "source": "terminal-bench",
+      "date": "2026-06-09",
+      "benchmark": "Terminal-Bench 4.0",
+      "model": "anthropic/claude-fable-5",
+      "modelVersion": null,
+      "harness": "claude-code",
+      "harnessVersion": null,
+      "taskClass": "general",
+      "metric": "accuracy",
+      "score": 44.55,
+      "n": 330,
+      "costUsd": 7265.01,
+      "tokens": 3785220369,
+      "notes": "reasoning effort max"
+    },
+    {
+      "source": "terminal-bench",
+      "date": "2026-08-14",
+      "benchmark": "Terminal-Bench 4.0",
+      "model": "z-ai/glm-5.3",
+      "modelVersion": null,
+      "harness": "claude-code",
+      "harnessVersion": null,
+      "taskClass": "general",
+      "metric": "accuracy",
+      "score": 41.82,
+      "n": 330,
+      "costUsd": 2727.63,
+      "tokens": 8677039373,
+      "notes": "reasoning effort max"
+    },
+    {
+      "source": "terminal-bench",
+      "date": "2026-06-26",
+      "benchmark": "Terminal-Bench 4.0",
+      "model": "openai/gpt-5.6-sol",
+      "modelVersion": null,
+      "harness": "codex",
+      "harnessVersion": null,
+      "taskClass": "general",
+      "metric": "accuracy",
+      "score": 37.27,
+      "n": 330,
+      "costUsd": 2541.7,
+      "tokens": 4409948969,
+      "notes": "reasoning effort max"
+    },
+    {
+      "source": "terminal-bench",
+      "date": "2026-05-28",
+      "benchmark": "Terminal-Bench 4.0",
+      "model": "anthropic/claude-opus-4.8",
+      "modelVersion": null,
+      "harness": "claude-code",
+      "harnessVersion": null,
+      "taskClass": "general",
+      "metric": "accuracy",
+      "score": 23.64,
+      "n": 330,
+      "costUsd": 6481.26,
+      "tokens": 6415823126,
+      "notes": "reasoning effort max"
+    },
+    {
+      "source": "terminal-bench",
+      "date": "2026-06-26",
+      "benchmark": "Terminal-Bench 4.0",
+      "model": "openai/gpt-5.6-terra",
+      "modelVersion": null,
+      "harness": "codex",
+      "harnessVersion": null,
+      "taskClass": "general",
+      "metric": "accuracy",
+      "score": 21.52,
+      "n": 330,
+      "costUsd": 1733.52,
+      "tokens": 5683805798,
+      "notes": "reasoning effort max"
+    },
+    {
+      "source": "terminal-bench",
+      "date": "2026-06-26",
+      "benchmark": "Terminal-Bench 4.0",
+      "model": "openai/gpt-5.6-luna",
+      "modelVersion": null,
+      "harness": "codex",
+      "harnessVersion": null,
+      "taskClass": "general",
+      "metric": "accuracy",
+      "score": 17.27,
+      "n": 330,
+      "costUsd": 346.67,
+      "tokens": 11557463640,
+      "notes": "reasoning effort max"
+    },
+    {
+      "source": "terminal-bench",
+      "date": "2026-06-30",
+      "benchmark": "Terminal-Bench 4.0",
+      "model": "anthropic/claude-sonnet-5",
+      "modelVersion": null,
+      "harness": "claude-code",
+      "harnessVersion": null,
+      "taskClass": "general",
+      "metric": "accuracy",
+      "score": 12.42,
+      "n": 330,
+      "costUsd": 9603.86,
+      "tokens": 21562180742,
+      "notes": "reasoning effort max"
+    },
+    {
+      "source": "coding-agent-bench",
+      "date": "2026-09-10",
+      "benchmark": "SWE-bench Verified",
+      "model": "anthropic/claude-opus-4.8",
+      "modelVersion": null,
+      "harness": "claude-code",
+      "harnessVersion": null,
+      "taskClass": "debug",
+      "metric": "pass@1",
+      "score": 86.8,
+      "n": 500,
+      "costUsd": 395,
+      "tokens": null,
+      "notes": "table carries no per-row date; dated by the repository's last update"
+    },
+    {
+      "source": "coding-agent-bench",
+      "date": "2026-09-10",
+      "benchmark": "SWE-bench Verified",
+      "model": "anthropic/claude-opus-4.8",
+      "modelVersion": null,
+      "harness": "opencode",
+      "harnessVersion": null,
+      "taskClass": "debug",
+      "metric": "pass@1",
+      "score": 83.4,
+      "n": 500,
+      "costUsd": 320,
+      "tokens": null,
+      "notes": "table carries no per-row date; dated by the repository's last update"
+    },
+    {
+      "source": "coding-agent-bench",
+      "date": "2026-09-10",
+      "benchmark": "SWE-bench Verified",
+      "model": "openai/gpt-5.5",
+      "modelVersion": null,
+      "harness": "codex",
+      "harnessVersion": null,
+      "taskClass": "debug",
+      "metric": "pass@1",
+      "score": 79.8,
+      "n": 500,
+      "costUsd": 443,
+      "tokens": null,
+      "notes": "table carries no per-row date; dated by the repository's last update"
+    },
+    {
+      "source": "coding-agent-bench",
+      "date": "2026-09-10",
+      "benchmark": "SWE-bench Verified",
+      "model": "anthropic/claude-sonnet-4.6",
+      "modelVersion": null,
+      "harness": "claude-code",
+      "harnessVersion": null,
+      "taskClass": "debug",
+      "metric": "pass@1",
+      "score": 79.6,
+      "n": 500,
+      "costUsd": null,
+      "tokens": null,
+      "notes": "table carries no per-row date; dated by the repository's last update"
+    },
+    {
+      "source": "coding-agent-bench",
+      "date": "2026-09-10",
+      "benchmark": "SWE-bench Verified",
+      "model": "redhatai/qwen3.6-35b-a3b-nvfp4",
+      "modelVersion": null,
+      "harness": "pi",
+      "harnessVersion": null,
+      "taskClass": "debug",
+      "metric": "pass@1",
+      "score": 65.0,
+      "n": 500,
+      "costUsd": 51,
+      "tokens": null,
+      "notes": "table carries no per-row date; dated by the repository's last update"
+    },
+    {
+      "source": "coding-agent-bench",
+      "date": "2026-09-10",
+      "benchmark": "SWE-bench Verified",
+      "model": "redhatai/qwen3.6-35b-a3b-nvfp4",
+      "modelVersion": null,
+      "harness": "claude-code",
+      "harnessVersion": null,
+      "taskClass": "debug",
+      "metric": "pass@1",
+      "score": 63.2,
+      "n": 500,
+      "costUsd": 48,
+      "tokens": null,
+      "notes": "table carries no per-row date; dated by the repository's last update"
+    },
+    {
+      "source": "coding-agent-bench",
+      "date": "2026-09-10",
+      "benchmark": "SWE-bench Verified",
+      "model": "redhatai/qwen3.6-35b-a3b-nvfp4",
+      "modelVersion": null,
+      "harness": "opencode",
+      "harnessVersion": null,
+      "taskClass": "debug",
+      "metric": "pass@1",
+      "score": 54.8,
+      "n": 500,
+      "costUsd": 67,
+      "tokens": null,
+      "notes": "table carries no per-row date; dated by the repository's last update"
+    },
+    {
+      "source": "coding-agent-bench",
+      "date": "2026-09-10",
+      "benchmark": "SWE-bench Pro (Ansible tasks)",
+      "model": "anthropic/claude-opus-4.8",
+      "modelVersion": null,
+      "harness": "opencode",
+      "harnessVersion": null,
+      "taskClass": "debug",
+      "metric": "pass@1",
+      "score": 78.1,
+      "n": 96,
+      "costUsd": 151,
+      "tokens": null,
+      "notes": "table carries no per-row date; dated by the repository's last update"
+    },
+    {
+      "source": "coding-agent-bench",
+      "date": "2026-09-10",
+      "benchmark": "SWE-bench Pro (Ansible tasks)",
+      "model": "anthropic/claude-opus-4.8",
+      "modelVersion": null,
+      "harness": "claude-code",
+      "harnessVersion": null,
+      "taskClass": "debug",
+      "metric": "pass@1",
+      "score": 69.8,
+      "n": 96,
+      "costUsd": 186,
+      "tokens": null,
+      "notes": "table carries no per-row date; dated by the repository's last update"
+    },
+    {
+      "source": "coding-agent-bench",
+      "date": "2026-09-10",
+      "benchmark": "SWE-bench Pro (Ansible tasks)",
+      "model": "openai/gpt-5.5",
+      "modelVersion": null,
+      "harness": "codex",
+      "harnessVersion": null,
+      "taskClass": "debug",
+      "metric": "pass@1",
+      "score": 60.4,
+      "n": 96,
+      "costUsd": 188,
+      "tokens": null,
+      "notes": "table carries no per-row date; dated by the repository's last update"
+    },
+    {
+      "source": "coding-agent-bench",
+      "date": "2026-09-10",
+      "benchmark": "SWE-bench Pro (Ansible tasks)",
+      "model": "openai/gpt-5.5",
+      "modelVersion": null,
+      "harness": "opencode",
+      "harnessVersion": null,
+      "taskClass": "debug",
+      "metric": "pass@1",
+      "score": 57.3,
+      "n": 96,
+      "costUsd": 111,
+      "tokens": null,
+      "notes": "table carries no per-row date; dated by the repository's last update"
+    },
+    {
+      "source": "coding-agent-bench",
+      "date": "2026-09-10",
+      "benchmark": "SWE-bench Pro (Ansible tasks)",
+      "model": "anthropic/claude-opus-4.6",
+      "modelVersion": null,
+      "harness": "claude-code",
+      "harnessVersion": null,
+      "taskClass": "debug",
+      "metric": "pass@1",
+      "score": 51.0,
+      "n": 96,
+      "costUsd": 172,
+      "tokens": null,
+      "notes": "table carries no per-row date; dated by the repository's last update"
+    },
+    {
+      "source": "coding-agent-bench",
+      "date": "2026-09-10",
+      "benchmark": "SWE-bench Pro (Ansible tasks)",
+      "model": "anthropic/claude-sonnet-4.6",
+      "modelVersion": null,
+      "harness": "claude-code",
+      "harnessVersion": null,
+      "taskClass": "debug",
+      "metric": "pass@1",
+      "score": 50.0,
+      "n": 96,
+      "costUsd": 184,
+      "tokens": null,
+      "notes": "table carries no per-row date; dated by the repository's last update"
+    },
+    {
+      "source": "coding-agent-bench",
+      "date": "2026-09-10",
+      "benchmark": "SWE-bench Pro (Ansible tasks)",
+      "model": "redhatai/qwen3.6-35b-a3b-nvfp4",
+      "modelVersion": null,
+      "harness": "pi",
+      "harnessVersion": null,
+      "taskClass": "debug",
+      "metric": "pass@1",
+      "score": 47.9,
+      "n": 96,
+      "costUsd": 13,
+      "tokens": null,
+      "notes": "table carries no per-row date; dated by the repository's last update"
+    },
+    {
+      "source": "coding-agent-bench",
+      "date": "2026-09-10",
+      "benchmark": "SWE-bench Pro (Ansible tasks)",
+      "model": "redhatai/qwen3.6-35b-a3b-nvfp4",
+      "modelVersion": null,
+      "harness": "claude-code",
+      "harnessVersion": null,
+      "taskClass": "debug",
+      "metric": "pass@1",
+      "score": 45.6,
+      "n": 96,
+      "costUsd": 10,
+      "tokens": null,
+      "notes": "table carries no per-row date; dated by the repository's last update"
+    },
+    {
+      "source": "coding-agent-bench",
+      "date": "2026-09-10",
+      "benchmark": "SWE-bench Pro (Ansible tasks)",
+      "model": "redhatai/qwen3.6-35b-a3b-nvfp4",
+      "modelVersion": null,
+      "harness": "opencode",
+      "harnessVersion": null,
+      "taskClass": "debug",
+      "metric": "pass@1",
+      "score": 37.5,
+      "n": 96,
+      "costUsd": 11,
+      "tokens": null,
+      "notes": "table carries no per-row date; dated by the repository's last update"
+    },
+    {
+      "source": "coding-agent-bench",
+      "date": "2026-09-10",
+      "benchmark": "Terminal-Bench 2.0",
+      "model": "redhatai/qwen3.6-35b-a3b-nvfp4",
+      "modelVersion": null,
+      "harness": "pi",
+      "harnessVersion": null,
+      "taskClass": "general",
+      "metric": "pass@1",
+      "score": 36.0,
+      "n": 87,
+      "costUsd": 11,
+      "tokens": null,
+      "notes": "table carries no per-row date; dated by the repository's last update"
+    },
+    {
+      "source": "coding-agent-bench",
+      "date": "2026-09-10",
+      "benchmark": "Terminal-Bench 2.0",
+      "model": "redhatai/qwen3.6-35b-a3b-nvfp4",
+      "modelVersion": null,
+      "harness": "opencode",
+      "harnessVersion": null,
+      "taskClass": "general",
+      "metric": "pass@1",
+      "score": 30.3,
+      "n": 87,
+      "costUsd": 11,
+      "tokens": null,
+      "notes": "table carries no per-row date; dated by the repository's last update"
+    },
+    {
+      "source": "livebench",
+      "date": "2026-06-25",
+      "benchmark": "LiveBench Coding",
+      "model": "anthropic/claude-fable-5.1",
+      "modelVersion": null,
+      "harness": null,
+      "harnessVersion": null,
+      "taskClass": "implement",
+      "metric": "mean of code generation and code completion",
+      "score": 86.38,
+      "n": null,
+      "costUsd": null,
+      "tokens": null,
+      "notes": "release 2026-06-25"
+    },
+    {
+      "source": "livebench",
+      "date": "2026-06-25",
+      "benchmark": "LiveBench Coding",
+      "model": "openai/gpt-5.6-sol",
+      "modelVersion": null,
+      "harness": null,
+      "harnessVersion": null,
+      "taskClass": "implement",
+      "metric": "mean of code generation and code completion",
+      "score": 83.94,
+      "n": null,
+      "costUsd": null,
+      "tokens": null,
+      "notes": "release 2026-06-25"
+    },
+    {
+      "source": "livebench",
+      "date": "2026-06-25",
+      "benchmark": "LiveBench Coding",
+      "model": "openai/gpt-5.6-luna",
+      "modelVersion": null,
+      "harness": null,
+      "harnessVersion": null,
+      "taskClass": "implement",
+      "metric": "mean of code generation and code completion",
+      "score": 82.91,
+      "n": null,
+      "costUsd": null,
+      "tokens": null,
+      "notes": "release 2026-06-25"
+    },
+    {
+      "source": "livebench",
+      "date": "2026-06-25",
+      "benchmark": "LiveBench Coding",
+      "model": "anthropic/claude-opus-4.8",
+      "modelVersion": null,
+      "harness": null,
+      "harnessVersion": null,
+      "taskClass": "implement",
+      "metric": "mean of code generation and code completion",
+      "score": 81.83,
+      "n": null,
+      "costUsd": null,
+      "tokens": null,
+      "notes": "release 2026-06-25"
+    },
+    {
+      "source": "livebench",
+      "date": "2026-06-25",
+      "benchmark": "LiveBench Coding",
+      "model": "anthropic/claude-opus-5",
+      "modelVersion": null,
+      "harness": null,
+      "harnessVersion": null,
+      "taskClass": "implement",
+      "metric": "mean of code generation and code completion",
+      "score": 81.45,
+      "n": null,
+      "costUsd": null,
+      "tokens": null,
+      "notes": "release 2026-06-25"
+    },
+    {
+      "source": "livebench",
+      "date": "2026-06-25",
+      "benchmark": "LiveBench Coding",
+      "model": "anthropic/claude-sonnet-5",
+      "modelVersion": null,
+      "harness": null,
+      "harnessVersion": null,
+      "taskClass": "implement",
+      "metric": "mean of code generation and code completion",
+      "score": 80.68,
+      "n": null,
+      "costUsd": null,
+      "tokens": null,
+      "notes": "release 2026-06-25"
+    },
+    {
+      "source": "livebench",
+      "date": "2026-06-25",
+      "benchmark": "LiveBench Coding",
+      "model": "openai/gpt-6-astra",
+      "modelVersion": null,
+      "harness": null,
+      "harnessVersion": null,
+      "taskClass": "implement",
+      "metric": "mean of code generation and code completion",
+      "score": 80.36,
+      "n": null,
+      "costUsd": null,
+      "tokens": null,
+      "notes": "release 2026-06-25"
+    },
+    {
+      "source": "livebench",
+      "date": "2026-06-25",
+      "benchmark": "LiveBench Coding",
+      "model": "moonshotai/kimi-k2.6",
+      "modelVersion": null,
+      "harness": null,
+      "harnessVersion": null,
+      "taskClass": "implement",
+      "metric": "mean of code generation and code completion",
+      "score": 78.57,
+      "n": null,
+      "costUsd": null,
+      "tokens": null,
+      "notes": "release 2026-06-25"
+    },
+    {
+      "source": "livebench",
+      "date": "2026-06-25",
+      "benchmark": "LiveBench Coding",
+      "model": "openai/gpt-5.6-terra",
+      "modelVersion": null,
+      "harness": null,
+      "harnessVersion": null,
+      "taskClass": "implement",
+      "metric": "mean of code generation and code completion",
+      "score": 78.25,
+      "n": null,
+      "costUsd": null,
+      "tokens": null,
+      "notes": "release 2026-06-25"
+    },
+    {
+      "source": "livebench",
+      "date": "2026-06-25",
+      "benchmark": "LiveBench Coding",
+      "model": "moonshotai/kimi-k2.7-code",
+      "modelVersion": null,
+      "harness": null,
+      "harnessVersion": null,
+      "taskClass": "implement",
+      "metric": "mean of code generation and code completion",
+      "score": 73.96,
+      "n": null,
+      "costUsd": null,
+      "tokens": null,
+      "notes": "release 2026-06-25"
+    },
+    {
+      "source": "swe-bench",
+      "date": "2026-02-17",
+      "benchmark": "SWE-bench Verified",
+      "model": "moonshotai/kimi-k2.5",
+      "modelVersion": null,
+      "harness": null,
+      "harnessVersion": null,
+      "taskClass": "debug",
+      "metric": "% resolved",
+      "score": 70.8,
+      "n": 500,
+      "costUsd": 73.28,
+      "tokens": null,
+      "notes": "run by mini-SWE-agent, reasoning effort high"
+    },
+    {
+      "source": "swe-bench",
+      "date": "2026-02-13",
+      "benchmark": "SWE-bench Multilingual",
+      "model": "moonshotai/kimi-k2.5",
+      "modelVersion": null,
+      "harness": null,
+      "harnessVersion": null,
+      "taskClass": "debug",
+      "metric": "% resolved",
+      "score": 67.3,
+      "n": 300,
+      "costUsd": 207.85,
+      "tokens": null,
+      "notes": "run by mini-SWE-agent"
+    },
+    {
+      "source": "swe-bench-pro",
+      "date": "2026-04-08",
+      "benchmark": "SWE-bench Pro (public)",
+      "model": "anthropic/claude-opus-4.6",
+      "modelVersion": null,
+      "harness": null,
+      "harnessVersion": null,
+      "taskClass": "debug",
+      "metric": "resolve rate",
+      "score": 51.9,
+      "n": null,
+      "costUsd": null,
+      "tokens": null,
+      "notes": "thinking"
+    },
+    {
+      "source": "swe-bench-pro",
+      "date": "2025-09-19",
+      "benchmark": "SWE-bench Pro (public)",
+      "model": "moonshotai/kimi-k2",
+      "modelVersion": null,
+      "harness": null,
+      "harnessVersion": null,
+      "taskClass": "debug",
+      "metric": "resolve rate",
+      "score": 27.67,
+      "n": null,
+      "costUsd": null,
+      "tokens": null,
+      "notes": "kimi-k2-instruct"
+    },
+    {
+      "source": "openbench",
+      "date": "2026-07-21",
+      "benchmark": "OpenBench harness bench",
+      "model": "openai/gpt-5.6-sol",
+      "modelVersion": null,
+      "harness": "codex",
+      "harnessVersion": null,
+      "taskClass": "general",
+      "metric": "solve rate",
+      "score": 73.8,
+      "n": 42,
+      "costUsd": null,
+      "tokens": null,
+      "notes": "same model across seven harnesses"
+    },
+    {
+      "source": "openbench",
+      "date": "2026-07-21",
+      "benchmark": "OpenBench harness bench",
+      "model": "openai/gpt-5.6-sol",
+      "modelVersion": null,
+      "harness": "opencode",
+      "harnessVersion": null,
+      "taskClass": "general",
+      "metric": "solve rate",
+      "score": 81.0,
+      "n": 42,
+      "costUsd": null,
+      "tokens": null,
+      "notes": "same model across seven harnesses"
+    },
+    {
+      "source": "openbench",
+      "date": "2026-07-21",
+      "benchmark": "OpenBench harness bench",
+      "model": "openai/gpt-5.6-sol",
+      "modelVersion": null,
+      "harness": "pi",
+      "harnessVersion": null,
+      "taskClass": "general",
+      "metric": "solve rate",
+      "score": 76.2,
+      "n": 42,
+      "costUsd": null,
+      "tokens": null,
+      "notes": "same model across seven harnesses"
+    },
+    {
+      "source": "openbench",
+      "date": "2026-07-21",
+      "benchmark": "OpenBench harness bench",
+      "model": "openai/gpt-5.6-sol",
+      "modelVersion": null,
+      "harness": "claude-code",
+      "harnessVersion": null,
+      "taskClass": "general",
+      "metric": "solve rate",
+      "score": 76.2,
+      "n": 42,
+      "costUsd": null,
+      "tokens": null,
+      "notes": "same model across seven harnesses"
+    }
+  ],
+  "models": [
+    {
+      "harness": "claude-code",
+      "model": "fable",
+      "route": "native",
+      "canonical": "anthropic/claude-fable-5.1",
+      "legacy": false
+    },
+    {
+      "harness": "claude-code",
+      "model": "opus",
+      "route": "native",
+      "canonical": "anthropic/claude-opus-5",
+      "legacy": false
+    },
+    {
+      "harness": "claude-code",
+      "model": "sonnet",
+      "route": "native",
+      "canonical": "anthropic/claude-sonnet-5",
+      "legacy": false
+    },
+    {
+      "harness": "claude-code",
+      "model": "haiku",
+      "route": "native",
+      "canonical": "anthropic/claude-haiku-4.5",
+      "legacy": false
+    },
+    {
+      "harness": "codex",
+      "model": "gpt-6-astra",
+      "route": "native",
+      "canonical": "openai/gpt-6-astra",
+      "legacy": false
+    },
+    {
+      "harness": "codex",
+      "model": "gpt-5.6-sol",
+      "route": "native",
+      "canonical": "openai/gpt-5.6-sol",
+      "legacy": false
+    },
+    {
+      "harness": "codex",
+      "model": "gpt-5.6-terra",
+      "route": "native",
+      "canonical": "openai/gpt-5.6-terra",
+      "legacy": false
+    },
+    {
+      "harness": "codex",
+      "model": "gpt-5.6-luna",
+      "route": "native",
+      "canonical": "openai/gpt-5.6-luna",
+      "legacy": false
+    },
+    {
+      "harness": "codex",
+      "model": "gpt-5.5",
+      "route": "native",
+      "canonical": "openai/gpt-5.5",
+      "legacy": true
+    },
+    {
+      "harness": "claude-code",
+      "model": "kimi-k2.7-code",
+      "route": "anthropic-gateway",
+      "canonical": "moonshotai/kimi-k2.7-code",
+      "legacy": false
+    },
+    {
+      "harness": "claude-code",
+      "model": "kimi-k2.6",
+      "route": "anthropic-gateway",
+      "canonical": "moonshotai/kimi-k2.6",
+      "legacy": false
+    },
+    {
+      "harness": "pi",
+      "model": "moonshotai/kimi-k2.7-code",
+      "route": "openrouter",
+      "canonical": "moonshotai/kimi-k2.7-code",
+      "legacy": false
+    },
+    {
+      "harness": "pi",
+      "model": "moonshotai/kimi-k2.6",
+      "route": "openrouter",
+      "canonical": "moonshotai/kimi-k2.6",
+      "legacy": false
+    },
+    {
+      "harness": "pi",
+      "model": "moonshotai/kimi-k2.5",
+      "route": "openrouter",
+      "canonical": "moonshotai/kimi-k2.5",
+      "legacy": false
+    },
+    {
+      "harness": "opencode",
+      "model": "moonshotai/kimi-k2.7-code",
+      "route": "openrouter",
+      "canonical": "moonshotai/kimi-k2.7-code",
+      "legacy": false
+    },
+    {
+      "harness": "opencode",
+      "model": "moonshotai/kimi-k2.6",
+      "route": "openrouter",
+      "canonical": "moonshotai/kimi-k2.6",
+      "legacy": false
+    },
+    {
+      "harness": "opencode",
+      "model": "moonshotai/kimi-k2.5",
+      "route": "openrouter",
+      "canonical": "moonshotai/kimi-k2.5",
+      "legacy": false
+    }
+  ],
+  "plans": [
+    {
+      "vendor": "claude",
+      "id": "free",
+      "displayName": "Free",
+      "confirmedAt": "2026-09-12"
+    },
+    {
+      "vendor": "claude",
+      "id": "pro",
+      "displayName": "Pro",
+      "confirmedAt": "2026-09-12"
+    },
+    {
+      "vendor": "claude",
+      "id": "max5",
+      "displayName": "Max 5x",
+      "confirmedAt": "2026-09-12"
+    },
+    {
+      "vendor": "claude",
+      "id": "max20",
+      "displayName": "Max 20x",
+      "confirmedAt": "2026-09-12"
+    },
+    {
+      "vendor": "claude",
+      "id": "team",
+      "displayName": "Team",
+      "confirmedAt": "2026-09-12"
+    },
+    {
+      "vendor": "claude",
+      "id": "enterprise",
+      "displayName": "Enterprise",
+      "confirmedAt": "2026-09-12"
+    },
+    {
+      "vendor": "chatgpt",
+      "id": "free",
+      "displayName": "Free",
+      "confirmedAt": "2026-09-12"
+    },
+    {
+      "vendor": "chatgpt",
+      "id": "plus",
+      "displayName": "Plus",
+      "confirmedAt": "2026-09-12"
+    },
+    {
+      "vendor": "chatgpt",
+      "id": "pro",
+      "displayName": "Pro",
+      "confirmedAt": "2026-09-12"
+    },
+    {
+      "vendor": "chatgpt",
+      "id": "business",
+      "displayName": "Business",
+      "confirmedAt": "2026-09-12"
+    }
+  ],
+  "entitlements": [
+    {
+      "harness": "claude-code",
+      "model": "fable",
+      "vendor": "claude",
+      "plan": "free",
+      "access": "unavailable"
+    },
+    {
+      "harness": "claude-code",
+      "model": "fable",
+      "vendor": "claude",
+      "plan": "pro",
+      "access": "credits"
+    },
+    {
+      "harness": "claude-code",
+      "model": "fable",
+      "vendor": "claude",
+      "plan": "max5",
+      "access": "included"
+    },
+    {
+      "harness": "claude-code",
+      "model": "fable",
+      "vendor": "claude",
+      "plan": "max20",
+      "access": "included"
+    },
+    {
+      "harness": "claude-code",
+      "model": "fable",
+      "vendor": "claude",
+      "plan": "team",
+      "access": "unavailable"
+    },
+    {
+      "harness": "claude-code",
+      "model": "fable",
+      "vendor": "claude",
+      "plan": "enterprise",
+      "access": "included"
+    },
+    {
+      "harness": "claude-code",
+      "model": "opus",
+      "vendor": "claude",
+      "plan": "free",
+      "access": "unavailable"
+    },
+    {
+      "harness": "claude-code",
+      "model": "opus",
+      "vendor": "claude",
+      "plan": "pro",
+      "access": "included"
+    },
+    {
+      "harness": "claude-code",
+      "model": "opus",
+      "vendor": "claude",
+      "plan": "max5",
+      "access": "included"
+    },
+    {
+      "harness": "claude-code",
+      "model": "opus",
+      "vendor": "claude",
+      "plan": "max20",
+      "access": "included"
+    },
+    {
+      "harness": "claude-code",
+      "model": "opus",
+      "vendor": "claude",
+      "plan": "team",
+      "access": "included"
+    },
+    {
+      "harness": "claude-code",
+      "model": "opus",
+      "vendor": "claude",
+      "plan": "enterprise",
+      "access": "included"
+    },
+    {
+      "harness": "claude-code",
+      "model": "sonnet",
+      "vendor": "claude",
+      "plan": "free",
+      "access": "included"
+    },
+    {
+      "harness": "claude-code",
+      "model": "sonnet",
+      "vendor": "claude",
+      "plan": "pro",
+      "access": "included"
+    },
+    {
+      "harness": "claude-code",
+      "model": "sonnet",
+      "vendor": "claude",
+      "plan": "max5",
+      "access": "included"
+    },
+    {
+      "harness": "claude-code",
+      "model": "sonnet",
+      "vendor": "claude",
+      "plan": "max20",
+      "access": "included"
+    },
+    {
+      "harness": "claude-code",
+      "model": "sonnet",
+      "vendor": "claude",
+      "plan": "team",
+      "access": "included"
+    },
+    {
+      "harness": "claude-code",
+      "model": "sonnet",
+      "vendor": "claude",
+      "plan": "enterprise",
+      "access": "included"
+    },
+    {
+      "harness": "claude-code",
+      "model": "haiku",
+      "vendor": "claude",
+      "plan": "free",
+      "access": "included"
+    },
+    {
+      "harness": "claude-code",
+      "model": "haiku",
+      "vendor": "claude",
+      "plan": "pro",
+      "access": "included"
+    },
+    {
+      "harness": "claude-code",
+      "model": "haiku",
+      "vendor": "claude",
+      "plan": "max5",
+      "access": "included"
+    },
+    {
+      "harness": "claude-code",
+      "model": "haiku",
+      "vendor": "claude",
+      "plan": "max20",
+      "access": "included"
+    },
+    {
+      "harness": "claude-code",
+      "model": "haiku",
+      "vendor": "claude",
+      "plan": "team",
+      "access": "included"
+    },
+    {
+      "harness": "claude-code",
+      "model": "haiku",
+      "vendor": "claude",
+      "plan": "enterprise",
+      "access": "included"
+    },
+    {
+      "harness": "codex",
+      "model": "gpt-6-astra",
+      "vendor": "chatgpt",
+      "plan": "plus",
+      "access": "included"
+    },
+    {
+      "harness": "codex",
+      "model": "gpt-6-astra",
+      "vendor": "chatgpt",
+      "plan": "pro",
+      "access": "included"
+    },
+    {
+      "harness": "codex",
+      "model": "gpt-6-astra",
+      "vendor": "chatgpt",
+      "plan": "business",
+      "access": "included"
+    },
+    {
+      "harness": "codex",
+      "model": "gpt-5.6-sol",
+      "vendor": "chatgpt",
+      "plan": "plus",
+      "access": "included"
+    },
+    {
+      "harness": "codex",
+      "model": "gpt-5.6-sol",
+      "vendor": "chatgpt",
+      "plan": "pro",
+      "access": "included"
+    },
+    {
+      "harness": "codex",
+      "model": "gpt-5.6-sol",
+      "vendor": "chatgpt",
+      "plan": "business",
+      "access": "included"
+    },
+    {
+      "harness": "codex",
+      "model": "gpt-5.6-terra",
+      "vendor": "chatgpt",
+      "plan": "plus",
+      "access": "included"
+    },
+    {
+      "harness": "codex",
+      "model": "gpt-5.6-terra",
+      "vendor": "chatgpt",
+      "plan": "pro",
+      "access": "included"
+    },
+    {
+      "harness": "codex",
+      "model": "gpt-5.6-terra",
+      "vendor": "chatgpt",
+      "plan": "business",
+      "access": "included"
+    },
+    {
+      "harness": "codex",
+      "model": "gpt-5.6-luna",
+      "vendor": "chatgpt",
+      "plan": "plus",
+      "access": "included"
+    },
+    {
+      "harness": "codex",
+      "model": "gpt-5.6-luna",
+      "vendor": "chatgpt",
+      "plan": "pro",
+      "access": "included"
+    },
+    {
+      "harness": "codex",
+      "model": "gpt-5.6-luna",
+      "vendor": "chatgpt",
+      "plan": "business",
+      "access": "included"
+    },
+    {
+      "harness": "codex",
+      "model": "gpt-5.5",
+      "vendor": "chatgpt",
+      "plan": "plus",
+      "access": "included"
+    },
+    {
+      "harness": "codex",
+      "model": "gpt-5.5",
+      "vendor": "chatgpt",
+      "plan": "pro",
+      "access": "included"
+    },
+    {
+      "harness": "codex",
+      "model": "gpt-5.5",
+      "vendor": "chatgpt",
+      "plan": "business",
+      "access": "included"
+    }
+  ],
+  "pricing": [
+    {
+      "model": "anthropic/claude-fable-5.1",
+      "inputPerMillion": 10,
+      "outputPerMillion": 50,
+      "cacheReadPerMillion": 0.25,
+      "cacheWritePerMillion": 12.5,
+      "source": "openrouter",
+      "asOf": "2026-09-12"
+    },
+    {
+      "model": "anthropic/claude-opus-5",
+      "inputPerMillion": 5,
+      "outputPerMillion": 25,
+      "cacheReadPerMillion": 0.5,
+      "cacheWritePerMillion": 6.25,
+      "source": "openrouter",
+      "asOf": "2026-09-12"
+    },
+    {
+      "model": "anthropic/claude-sonnet-5",
+      "inputPerMillion": 2,
+      "outputPerMillion": 10,
+      "cacheReadPerMillion": 0.2,
+      "cacheWritePerMillion": 2.5,
+      "source": "openrouter",
+      "asOf": "2026-09-12"
+    },
+    {
+      "model": "anthropic/claude-haiku-4.5",
+      "inputPerMillion": 1,
+      "outputPerMillion": 5,
+      "cacheReadPerMillion": 0.1,
+      "cacheWritePerMillion": 1.25,
+      "source": "openrouter",
+      "asOf": "2026-09-12"
+    },
+    {
+      "model": "openai/gpt-6-astra",
+      "inputPerMillion": 10,
+      "outputPerMillion": 50,
+      "cacheReadPerMillion": 1,
+      "cacheWritePerMillion": 12.5,
+      "source": "openrouter",
+      "asOf": "2026-09-12"
+    },
+    {
+      "model": "openai/gpt-5.6-sol",
+      "inputPerMillion": 2,
+      "outputPerMillion": 10,
+      "cacheReadPerMillion": 0.2,
+      "cacheWritePerMillion": 2.5,
+      "source": "openrouter",
+      "asOf": "2026-09-12"
+    },
+    {
+      "model": "openai/gpt-5.6-terra",
+      "inputPerMillion": 2,
+      "outputPerMillion": 12,
+      "cacheReadPerMillion": 0.2,
+      "cacheWritePerMillion": 2.5,
+      "source": "openrouter",
+      "asOf": "2026-09-12"
+    },
+    {
+      "model": "openai/gpt-5.6-luna",
+      "inputPerMillion": 0.2,
+      "outputPerMillion": 1.2,
+      "cacheReadPerMillion": 0.02,
+      "cacheWritePerMillion": 0.25,
+      "source": "openrouter",
+      "asOf": "2026-09-12"
+    },
+    {
+      "model": "openai/gpt-5.5",
+      "inputPerMillion": 5,
+      "outputPerMillion": 30,
+      "cacheReadPerMillion": 0.5,
+      "cacheWritePerMillion": null,
+      "source": "openrouter",
+      "asOf": "2026-09-12"
+    },
+    {
+      "model": "moonshotai/kimi-k2.7-code",
+      "inputPerMillion": 0.71,
+      "outputPerMillion": 3.5,
+      "cacheReadPerMillion": 0.15,
+      "cacheWritePerMillion": null,
+      "source": "openrouter",
+      "asOf": "2026-09-12"
+    },
+    {
+      "model": "moonshotai/kimi-k2.6",
+      "inputPerMillion": 0.95,
+      "outputPerMillion": 4,
+      "cacheReadPerMillion": 0.16,
+      "cacheWritePerMillion": null,
+      "source": "openrouter",
+      "asOf": "2026-09-12"
+    },
+    {
+      "model": "moonshotai/kimi-k2.5",
+      "inputPerMillion": 0.45,
+      "outputPerMillion": 2.25,
+      "cacheReadPerMillion": 0.07,
+      "cacheWritePerMillion": null,
+      "source": "openrouter",
+      "asOf": "2026-09-12"
+    }
+  ]
+}
