@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "version": 2,
-  "generatedAt": "2026-09-14T03:31:56.000Z",
+  "version": 3,
+  "generatedAt": "2026-10-06T19:51:44.000Z",
   "sources": [
     {
       "id": "terminal-bench",
@@ -65,6 +65,34 @@
       "url": "https://openrouter.ai/api/v1/models",
       "terms": "Public model and pricing API.",
       "fetchedAt": "2026-09-12"
+    },
+    {
+      "id": "google-ai-plans",
+      "name": "Google AI plans and Gemini Code Assist tiers",
+      "url": "https://one.google.com/about/google-ai-plans",
+      "terms": "Vendor plan page; tiers transcribed as published. Provisional: recorded from the harness survey of 2026-09-21, not re-read against the page.",
+      "fetchedAt": "2026-09-21"
+    },
+    {
+      "id": "xai-grok-plans",
+      "name": "Grok plans",
+      "url": "https://x.ai/grok",
+      "terms": "Vendor plan page; tiers transcribed as published. Provisional: recorded from the harness survey of 2026-09-21, not re-read against the page.",
+      "fetchedAt": "2026-09-21"
+    },
+    {
+      "id": "moonshot-kimi-plans",
+      "name": "Kimi Code membership",
+      "url": "https://www.kimi.com/coding",
+      "terms": "Vendor plan page; tiers transcribed as published. Provisional: recorded from the harness survey of 2026-09-21, not re-read against the page.",
+      "fetchedAt": "2026-09-21"
+    },
+    {
+      "id": "cursor-pricing",
+      "name": "Cursor pricing",
+      "url": "https://cursor.com/pricing",
+      "terms": "Vendor plan page; tiers transcribed as published. Provisional: recorded from the harness survey of 2026-09-21, not re-read against the page.",
+      "fetchedAt": "2026-09-21"
     }
   ],
   "benchmarks": [
@@ -1002,6 +1030,114 @@
       "id": "business",
       "displayName": "Business",
       "confirmedAt": "2026-09-12"
+    },
+    {
+      "vendor": "google",
+      "id": "free",
+      "displayName": "Free (Google account)",
+      "confirmedAt": "2026-09-21"
+    },
+    {
+      "vendor": "google",
+      "id": "ai-pro",
+      "displayName": "Google AI Pro",
+      "confirmedAt": "2026-09-21"
+    },
+    {
+      "vendor": "google",
+      "id": "ai-ultra",
+      "displayName": "Google AI Ultra",
+      "confirmedAt": "2026-09-21"
+    },
+    {
+      "vendor": "google",
+      "id": "code-assist-standard",
+      "displayName": "Gemini Code Assist Standard",
+      "confirmedAt": "2026-09-21"
+    },
+    {
+      "vendor": "google",
+      "id": "code-assist-enterprise",
+      "displayName": "Gemini Code Assist Enterprise",
+      "confirmedAt": "2026-09-21"
+    },
+    {
+      "vendor": "xai",
+      "id": "free",
+      "displayName": "Free",
+      "confirmedAt": "2026-09-21"
+    },
+    {
+      "vendor": "xai",
+      "id": "supergrok",
+      "displayName": "SuperGrok",
+      "confirmedAt": "2026-09-21"
+    },
+    {
+      "vendor": "xai",
+      "id": "supergrok-heavy",
+      "displayName": "SuperGrok Heavy",
+      "confirmedAt": "2026-09-21"
+    },
+    {
+      "vendor": "moonshot",
+      "id": "moderato",
+      "displayName": "Moderato",
+      "confirmedAt": "2026-09-21"
+    },
+    {
+      "vendor": "moonshot",
+      "id": "allegretto",
+      "displayName": "Allegretto",
+      "confirmedAt": "2026-09-21"
+    },
+    {
+      "vendor": "moonshot",
+      "id": "allegro",
+      "displayName": "Allegro",
+      "confirmedAt": "2026-09-21"
+    },
+    {
+      "vendor": "moonshot",
+      "id": "vivace",
+      "displayName": "Vivace",
+      "confirmedAt": "2026-09-21"
+    },
+    {
+      "vendor": "cursor",
+      "id": "hobby",
+      "displayName": "Hobby",
+      "confirmedAt": "2026-09-21"
+    },
+    {
+      "vendor": "cursor",
+      "id": "pro",
+      "displayName": "Pro",
+      "confirmedAt": "2026-09-21"
+    },
+    {
+      "vendor": "cursor",
+      "id": "pro-plus",
+      "displayName": "Pro+",
+      "confirmedAt": "2026-09-21"
+    },
+    {
+      "vendor": "cursor",
+      "id": "ultra",
+      "displayName": "Ultra",
+      "confirmedAt": "2026-09-21"
+    },
+    {
+      "vendor": "cursor",
+      "id": "teams",
+      "displayName": "Teams",
+      "confirmedAt": "2026-09-21"
+    },
+    {
+      "vendor": "cursor",
+      "id": "enterprise",
+      "displayName": "Enterprise",
+      "confirmedAt": "2026-09-21"
     }
   ],
   "entitlements": [

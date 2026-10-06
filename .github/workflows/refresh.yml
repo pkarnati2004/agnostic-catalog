@@ -1,0 +1,81 @@
+name: Refresh the catalog
+
+# Every Monday morning: read the public sources, publish a new version when the numbers moved, and
+# open a pull request instead when the result does not match agn's schema rules. No secrets: the
+# sources are public and the job pushes with the token GitHub gives the run.
+
+on:
+  schedule:
+    - cron: "0 6 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: refresh-catalog
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+      - uses: actions/setup-node@39370e3970a6d050c480ffad4ff0ed4d3fdee5af # v4.1.0
+        with:
+          node-version: "22"
+
+      - name: Refresh from the public sources
+        id: refresh
+        run: |
+          set +e
+          node scripts/refresh.mjs 2>&1 | tee "$RUNNER_TEMP/refresh.log"
+          code=${PIPESTATUS[0]}
+          echo "code=$code" >> "$GITHUB_OUTPUT"
+          # 0 publishes and 2 opens a pull request; anything else, including a failed fetch, fails
+          # the job, because a week that quietly refreshed nothing looks the same as a quiet week.
+          if [ "$code" -ne 0 ] && [ "$code" -ne 2 ]; then exit "$code"; fi
+
+      - name: Publish the new version
+        if: steps.refresh.outputs.code == '0'
+        run: |
+          if git diff --quiet -- catalog.json manifest.json overrides.json; then
+            echo "nothing changed this week"
+            exit 0
+          fi
+          version=$(node -p "require('./catalog.json').version")
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add catalog.json manifest.json overrides.json
+          git commit -m "Publish catalog version $version"
+          git push
+
+      - name: Describe the validation failure
+        if: steps.refresh.outputs.code == '2'
+        run: |
+          {
+            echo "\`scripts/refresh.mjs\` produced a catalog that does not match the schema rules in"
+            echo "\`scripts/catalog-rules.mjs\`, so it was not published. The refreshed files are on this"
+            echo "branch: fix them here, or fix the rules if agn's schema moved, and merge."
+            echo
+            echo '```'
+            cat "$RUNNER_TEMP/refresh.log"
+            echo '```'
+          } > "$RUNNER_TEMP/body.md"
+          if git diff --quiet; then
+            echo "validation failed with no change to open a pull request with"
+            exit 1
+          fi
+
+      - name: Open a pull request
+        if: steps.refresh.outputs.code == '2'
+        uses: peter-evans/create-pull-request@5e914681df9dc83aa4e4905692ca88beb2f9e91f # v7.0.5
+        with:
+          branch: catalog-refresh-failed
+          title: Catalog refresh failed validation
+          body-path: ${{ runner.temp }}/body.md
+          commit-message: Refresh the catalog from the public sources
+          add-paths: |
+            catalog.json
+            manifest.json
+            overrides.json
