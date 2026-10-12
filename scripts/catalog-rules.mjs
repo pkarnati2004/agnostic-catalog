@@ -8,12 +8,20 @@ export const SCHEMA_VERSION = 1;
 const TABLES = ["sources", "benchmarks", "models", "plans", "entitlements", "pricing"];
 const ROUTES = ["native", "anthropic-gateway", "openai-compatible", "openrouter", "local"];
 const INTENTS = ["implement", "debug", "refactor", "review", "research", "ui", "general"];
-const PLAN_VENDORS = ["claude", "chatgpt"];
+const PLAN_VENDORS = ["claude", "chatgpt", "google", "xai", "moonshot", "cursor"];
 const ACCESS = ["included", "credits", "unavailable"];
 const PRICE_SOURCES = ["openrouter", "curated"];
 
-// Only these two harnesses bill by plan, so an entitlement row pairing any other is bad data.
-const ENTITLEMENT_VENDORS = { "claude-code": "claude", codex: "chatgpt" };
+// The harnesses a vendor's plan bills (agn's registry identity rows); an entitlement row pairing a
+// harness with another vendor's plan is bad data.
+const ENTITLEMENT_VENDORS = {
+  "claude-code": "claude",
+  codex: "chatgpt",
+  gemini: "google",
+  "cursor-agent": "cursor",
+  kimi: "moonshot",
+  grok: "xai",
+};
 
 const text = (value) => typeof value === "string" && value.length > 0;
 const anyText = (value) => typeof value === "string";
@@ -28,9 +36,10 @@ const wholeNonNegative = (value) => number(value) && Number.isInteger(value) && 
 const score = (value) => number(value) && value >= 0 && value <= 100;
 const orNull = (check) => (value) => value === null || check(value);
 const oneOf = (values) => (value) => values.includes(value);
-// `other:<binary>` is the escape hatch for a harness with no registry entry.
+// The same shape agn's `isHarnessId` accepts: a bare lowercase id, or `other:<binary>` for a
+// harness with no registry entry.
 const harness = (value) =>
-  ["claude-code", "codex", "pi", "opencode"].includes(value) ||
+  (text(value) && /^[a-z][a-z0-9-]*$/.test(value)) ||
   (text(value) && value.startsWith("other:") && value.length > "other:".length);
 
 // Every field is required here, including `models[].legacy`, which agn's schema defaults to false:
