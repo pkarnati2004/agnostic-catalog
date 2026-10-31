@@ -89,12 +89,12 @@ test("a missing field is a failure", () => {
 });
 
 const enumCases = [
-  ["a harness nobody has an entry for", (c) => (c.models[0].harness = "claude"), "models[0].harness"],
+  ["a harness id that is not an id", (c) => (c.models[0].harness = "Claude Code"), "models[0].harness"],
   ["a route no executor speaks", (c) => (c.models[0].route = "grpc"), "models[0].route"],
   ["a task class the classifier never answers", (c) => (c.benchmarks[0].taskClass = "qa"), "benchmarks[0].taskClass"],
   ["an access word billing cannot read", (c) => (c.entitlements[0].access = "maybe"), "entitlements[0].access"],
   ["a price from an unnamed source", (c) => (c.pricing[0].source = "a friend"), "pricing[0].source"],
-  ["a plan vendor that bills nothing", (c) => (c.plans[0].vendor = "google"), "plans[0].vendor"],
+  ["a plan vendor that bills nothing", (c) => (c.plans[0].vendor = "mistral"), "plans[0].vendor"],
 ];
 
 for (const [name, breakIt, path] of enumCases) {
