@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "version": 4,
-  "generatedAt": "2026-10-12T16:20:33.785Z",
+  "version": 5,
+  "generatedAt": "2026-11-02T15:19:23.210Z",
   "sources": [
     {
       "id": "terminal-bench",
@@ -64,7 +64,7 @@
       "name": "OpenRouter model list",
       "url": "https://openrouter.ai/api/v1/models",
       "terms": "Public model and pricing API.",
-      "fetchedAt": "2026-10-12"
+      "fetchedAt": "2026-11-02"
     },
     {
       "id": "google-ai-plans",
@@ -1024,6 +1024,20 @@
       "route": "openrouter",
       "canonical": "moonshotai/kimi-k3",
       "legacy": false
+    },
+    {
+      "harness": "opencode",
+      "model": "moonshotai/kimi-k3.1-pro",
+      "route": "openrouter",
+      "canonical": "moonshotai/kimi-k3.1-pro",
+      "legacy": false
+    },
+    {
+      "harness": "pi",
+      "model": "moonshotai/kimi-k3.1-pro",
+      "route": "openrouter",
+      "canonical": "moonshotai/kimi-k3.1-pro",
+      "legacy": false
     }
   ],
   "plans": [
@@ -1519,12 +1533,12 @@
     },
     {
       "model": "openai/gpt-5.6-sol",
-      "inputPerMillion": 2,
-      "outputPerMillion": 10,
-      "cacheReadPerMillion": 0.2,
-      "cacheWritePerMillion": 2.5,
+      "inputPerMillion": 4,
+      "outputPerMillion": 20,
+      "cacheReadPerMillion": 0.4,
+      "cacheWritePerMillion": 5,
       "source": "openrouter",
-      "asOf": "2026-09-12"
+      "asOf": "2026-11-02"
     },
     {
       "model": "openai/gpt-5.6-terra",
@@ -1555,12 +1569,12 @@
     },
     {
       "model": "moonshotai/kimi-k2.7-code",
-      "inputPerMillion": 0.6712,
-      "outputPerMillion": 3.35,
-      "cacheReadPerMillion": 0.18,
+      "inputPerMillion": 0.6,
+      "outputPerMillion": 3.5,
+      "cacheReadPerMillion": 0.15,
       "cacheWritePerMillion": null,
       "source": "openrouter",
-      "asOf": "2026-10-12"
+      "asOf": "2026-11-02"
     },
     {
       "model": "moonshotai/kimi-k2.6",
@@ -1609,12 +1623,21 @@
     },
     {
       "model": "moonshotai/kimi-k3",
-      "inputPerMillion": 0.73,
-      "outputPerMillion": 10,
-      "cacheReadPerMillion": 0.55,
+      "inputPerMillion": 0.192,
+      "outputPerMillion": 15,
+      "cacheReadPerMillion": 0.182,
       "cacheWritePerMillion": null,
       "source": "openrouter",
-      "asOf": "2026-10-12"
+      "asOf": "2026-11-02"
+    },
+    {
+      "model": "moonshotai/kimi-k3.1-pro",
+      "inputPerMillion": 2,
+      "outputPerMillion": 10,
+      "cacheReadPerMillion": 0.2,
+      "cacheWritePerMillion": null,
+      "source": "openrouter",
+      "asOf": "2026-11-02"
     }
   ]
 }
